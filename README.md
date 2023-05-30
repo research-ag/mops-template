@@ -28,7 +28,7 @@ You need `mops` installed. In your project directory run:
 mops add <...>
 ```
 
-In the Motoko source file import the package as one of:
+In the Motoko source file import the package as:
 ```
 import .. "mo:..";
 ```
@@ -37,11 +37,14 @@ import .. "mo:..";
 
 ### Build & test
 
-You need `moc` and `wasmtime` installed.
+We need up-to-date versions of `node`, `moc` and `mops` installed.
+Suppose `<path-to-moc>` is the path of the `moc` binary of the appropriate version.
+
 Then run:
 ```
 git clone git@github.com:research-ag/....git
-make -C test
+mops install
+DFX_MOC_PATH=<path-to-moc> mops test
 ```
 
 ## Benchmarks
@@ -61,6 +64,8 @@ The benchmarking code can be found here: [canister-profiling](https://github.com
 MR Research AG, 2023
 ## Authors
 
+Main author:\
+Contributors:
 ## License 
 
 Apache-2.0
