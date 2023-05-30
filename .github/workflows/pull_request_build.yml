@@ -18,19 +18,19 @@ jobs:
       - name: Make bin directory
         run: mkdir -p /home/runner/bin
 
-      - name: "install Motoko binaries"
+      - name: Install Motoko binaries
         run: |
           wget https://github.com/dfinity/motoko/releases/download/${{ env.moc_version }}/motoko-linux64-${{ env.moc_version }}.tar.gz
           tar -xzf motoko-linux64-${{ env.moc_version }}.tar.gz -C /home/runner/bin
           echo "/home/runner/bin" >> $GITHUB_PATH
 
-      - name: "install mops"
+      - name: Install mops
         run: |          
           npm i -g ic-mops@${{ env.mops_version }}
 
-      - name: install mops packages
+      - name: Install mops packages
         run: mops install
   
-      - name: "test"
+      - name: Run test
         run: DFX_MOC_PATH=/home/runner/bin/moc mops test
 

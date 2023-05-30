@@ -37,8 +37,8 @@ import .. "mo:..";
 
 ### Build & test
 
-You should have the latest versions of `node`, `moc` and `mops` installed.
-And the `DFX_MOC_PATH` variable should be set to the current `moc` location.
+We need up-to-date versions of `node`, `moc` and `mops` installed.
+Suppose `<path-to-moc>` is the path of the `moc` binary of the appropriate version.
 
 Then run:
 ```
