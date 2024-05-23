@@ -1,10 +1,10 @@
 /// ...
 ///
-/// Copyright: 2023 MR Research AG
+/// Copyright: 2023-2024 MR Research AG
 /// Main author: 
 /// Contributors: 
 
-import Prim "mo:⛔";
+import Prim "mo:prim";
 
 module {
 };
