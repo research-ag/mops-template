@@ -45,6 +45,13 @@ mops install
 mops test
 ```
 
+### Benchmark
+
+Run
+```
+mops bench
+```
+
 ## Design
 
 ## Implementation notes
