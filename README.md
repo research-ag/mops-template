@@ -5,9 +5,8 @@
 ### Links
 
 The package is published on [MOPS](https://mops.one/...) and [GitHub](https://github.com/research-ag/...).
-Please refer to the README on GitHub where it renders properly with formulas and tables.
 
-The API documentation can be found [here](https://mops.one/.../docs/lib) on Mops.
+The API documentation can be found [here](https://mops.one/.../docs).
 
 For updates, help, questions, feedback and other requests related to this package join us on:
 
@@ -38,22 +37,13 @@ import .. "mo:..";
 ### Build & test
 
 We need up-to-date versions of `node`, `moc` and `mops` installed.
-Suppose `<path-to-moc>` is the path of the `moc` binary of the appropriate version.
 
 Then run:
 ```
 git clone git@github.com:research-ag/....git
 mops install
-DFX_MOC_PATH=<path-to-moc> mops test
+mops test
 ```
-
-## Benchmarks
-
-The benchmarking code can be found here: [canister-profiling](https://github.com/research-ag/canister-profiling)
-
-### Time
-
-### Memory
 
 ## Design
 
@@ -61,7 +51,7 @@ The benchmarking code can be found here: [canister-profiling](https://github.com
 
 ## Copyright
 
-MR Research AG, 2023
+MR Research AG, 2023-2024
 ## Authors
 
 Main author:\
