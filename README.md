@@ -58,11 +58,11 @@ mops bench --replica pocket-ic
 
 ## Copyright
 
-MR Research AG, 2023-2024
+MR Research AG, 2025
 ## Authors
 
-Main author:\
-Contributors:
+Main author: 
+Contributors: 
 ## License 
 
 Apache-2.0
