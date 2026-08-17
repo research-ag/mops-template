@@ -10,9 +10,9 @@ The API documentation can be found [here](https://mops.one/.../docs).
 
 For updates, help, questions, feedback and other requests related to this package join us on:
 
-* [OpenChat group](https://oc.app/2zyqk-iqaaa-aaaar-anmra-cai)
-* [Twitter](https://twitter.com/mr_research_ag)
-* [Dfinity forum](https://forum.dfinity.org/)
+- [OpenChat group](https://oc.app/2zyqk-iqaaa-aaaar-anmra-cai)
+- [Twitter](https://twitter.com/mr_research_ag)
+- [Dfinity forum](https://forum.dfinity.org/)
 
 ### Motivation
 
@@ -23,11 +23,13 @@ For updates, help, questions, feedback and other requests related to this packag
 ### Install with mops
 
 You need `mops` installed. In your project directory run:
+
 ```
 mops add <...>
 ```
 
 In the Motoko source file import the package as:
+
 ```
 import .. "mo:..";
 ```
@@ -39,6 +41,7 @@ import .. "mo:..";
 We need up-to-date versions of `node`, `moc` and `mops` installed.
 
 Then run:
+
 ```
 git clone git@github.com:research-ag/....git
 mops install
@@ -48,8 +51,25 @@ mops test
 ### Benchmark
 
 Run
+
 ```
 mops bench --replica pocket-ic
+```
+
+### Format the code
+
+We use `prettier` with the `prettier-plugin-motoko` plugin (configured in `.prettierrc`). The CI checks formatting on every pull request.
+
+To format the code locally run:
+
+```
+npx -y prettier --plugin prettier-plugin-motoko --write '**/*.{mo,json,md}'
+```
+
+To only check the formatting (as CI does) run:
+
+```
+npx -y prettier --plugin prettier-plugin-motoko --check '**/*.{mo,json,md}'
 ```
 
 ## Design
@@ -58,11 +78,13 @@ mops bench --replica pocket-ic
 
 ## Copyright
 
-MR Research AG, 2025
+MR Research AG, 2026
+
 ## Authors
 
-Main author: 
-Contributors: 
-## License 
+Main author:
+Contributors:
+
+## License
 
 Apache-2.0

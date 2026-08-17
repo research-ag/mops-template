@@ -7,12 +7,12 @@ keywords = [ ]
 license = "Apache-2.0"
 
 [dependencies]
-base = "0.14.13"
+core = "2.6.1"
 
 [dev-dependencies]
-test = "2.0.0"
-bench = "1.0.0"
+test = "2.1.2"
+bench-helper = "0.0.3"
 
 [toolchain]
-moc = "0.14.13"
-pocket-ic = "4.0.0"
+moc = "1.14.0"
+pocket-ic = "15.0.0"
