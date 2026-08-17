@@ -1,21 +1,18 @@
-import Bench "mo:bench";
+import Bench "mo:bench-helper";
 
 module {
-  public func init() : Bench.Bench {
-    let bench = Bench.Bench();
+  public func init() : Bench.V1 {
+    let schema : Bench.Schema = {
+      name = "My benchmark name";
+      description = "My description";
+      rows = ["bench1"];
+      cols = ["val0"];
+    };
 
-    // benchmark code...
-    bench.name("My benchmark name");
-    bench.description("My description");
-
-    bench.rows(["bench1"]);
-    bench.cols(["val0"]);
-
-
-    bench.runner(func(row, col) {
+    let run : Bench.Runner = func(ri, ci) {
       // benchmark code...
-    });
+    };
 
-    bench;
+    Bench.V1(schema, run);
   };
 };

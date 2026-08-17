@@ -1,6 +1,6 @@
 /// ...
 ///
-/// Copyright: 2025 MR Research AG
+/// Copyright: 2026 MR Research AG
 /// Main author: 
 /// Contributors: 
 
