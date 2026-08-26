@@ -13,6 +13,9 @@ core = "2.6.1"
 test = "2.1.2"
 bench-helper = "0.0.3"
 
+[optimize]
+
 [toolchain]
 moc = "1.14.0"
 pocket-ic = "15.0.0"
+wasm-opt = "132"
